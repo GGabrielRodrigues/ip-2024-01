@@ -1,0 +1,324 @@
+Esses algoritmos foram feitos em uma IDE chamada "VisuAlg", feita especialmente para o ensino de lógica de programação.
+Todos eles foram testados e funcionam como a atividade manda.
+-----------------------------
+1.
+Algoritmo "Aprovado ou Reprovado"
+var
+nota1: real
+nota2: real
+nota3: real
+MEDIA: real
+
+inicio
+Leia (nota1, nota2, nota3)
+MEDIA <- (nota1+nota2+nota3)/3
+Escreval ("MÉDIA: ",MEDIA)
+Se (MEDIA>=6) entao
+Escreva ("Aprovado")
+senao
+Escreva ("Reprovado")
+fimse
+fimalgoritmo
+---------------------------
+2.
+
+algoritmo "Arrecadação de Jogos"
+
+var
+ pctcadeiras, pctpopular, pctgeral, pctarquibancada: real
+numtestes,totalpessoas: inteiro
+conta: real
+rctcadeiras, rctpopular, rctgeral, rctarquibancada: real
+ordem: inteiro
+
+Inicio
+Escreva ("Quantidade de jogos: ")
+Leia (numtestes)
+Enquanto (numtestes > 0) faca
+ordem <- 1
+Escreval (" ")
+Escreval (" ")
+Escreva ("Total de pessoas: ")
+Leia (totalpessoas)
+Escreva ("Porcentagem de pessoas na categoria 'Cadeiras': ")
+Leia (pctcadeiras)
+Escreva ("Porcentagem de pessoas na categoria 'Popular': ")
+Leia (pctpopular)
+Escreva ("Porcentagem de pessoas na categoria 'Geral': ")
+Leia (pctgeral)
+Escreval ("Porcentagem de pessoas na categoria 'Arquibancada': ")
+Leia (pctarquibancada)
+rctcadeiras <- (totalpessoas*pctcadeiras/100*20)
+rctgeral <- (totalpessoas*pctgeral/100*5)
+rctarquibancada <- (totalpessoas*pctarquibancada/100*10)
+rctpopular <- (totalpessoas*pctpopular/100)
+conta <- rctcadeiras + rctgeral + rctarquibancada + rctpopular
+Escreva ("Renda do jogo: ",conta)
+numtestes <- numtestes - 1
+fimenquanto
+
+fimalgoritmo
+
+-------------------------
+3.
+
+algoritmo "Composição Inteira"
+
+var
+n1,n2,n3: inteiro
+concat: inteiro
+quadconcat: real
+
+inicio
+Escreva ("Digite os três dígitos (redundante, eu sei): ")
+Leia (n1,n2,n3)
+concat <- (n1*100 + n2*10 + n3)
+quadconcat <- concat^2
+Se (n1 >= 10) ou (n2 >= 10) ou (n3 >= 10) entao
+Escreva ("Dígito Inválido")
+senao
+Escreval ("Concatenação dos dígitos: ",concat)
+Escreva ("Quadrado da concatenação: ", quadconcat)
+fimse
+fimalgoritmo
+
+----------------------------
+4.
+
+algoritmo "Consumo de energia"
+
+var
+salmin, cadakw, totalkw, valortotal, valordesc: real
+
+inicio
+Escreva ("Insira o valor do salário mínimo (atual: R$1412): ")
+Leia (salmin)
+Escreva ("Insira o valor do total energético gasto, em KW: ")
+Leia (totalkw)
+cadakw <- (salmin*7/1000)
+EscrevaL ("Valor de cada KW: ", cadakw)
+valortotal <- cadakw*totalkw
+Escreval ("Valor total a ser pago: R$", valortotal)
+valordesc <- valortotal*9/10
+Escreva ("Valor total com desconto: R$", valordesc)
+
+fimalgoritmo
+------------------------------------------------------------
+
+5.
+
+algoritmo "Conta de Água"
+var
+
+conta: inteiro
+gastagua: real
+tipocon: caractere
+valorconta: real
+
+inicio
+      Escreva ("Insira o nº da conta: ")
+      Leia(conta)
+      Escreva ("Insira o consumo d'água em m³: ")
+      Leia (gastagua)
+      Escreva ("Insira o tipo de consumidor: ")
+      Leia (tipocon)
+      Escreval (" ")
+      Se (tipocon = "R") entao
+          valorconta <- 5 + 0.05*gastagua
+          Escreval ("CONTA: ", conta)
+          escreva ("Preço a pagar: ",valorconta:4:2)
+          fimse
+      Se (tipocon = "C") e (gastagua > 80) entao
+          valorconta <- 0.25*gastagua + 500
+          Escreval ("CONTA: ", conta)
+          escreva ("Preço a pagar: ",valorconta:4:2)
+          fimse
+      Se (tipocon = "C") e (gastagua <= 80) entao
+          valorconta <- 500
+          Escreval ("CONTA: ", conta)
+          Escreva ("Preço a pagar: ",valorconta:4:2)
+          fimse
+      Se (tipocon = "I") e (gastagua <= 100) entao
+          valorconta <- 800
+          Escreval ("CONTA: ", conta)
+          Escreva ("Preço a pagar: ",valorconta:4:2)
+          fimse
+      Se (tipocon = "I") e (gastagua > 100) entao
+          valorconta <- gastagua*0.04 + 800
+          Escreval ("CONTA: ", conta)
+          Escreva ("Preço a pagar: ",valorconta:4:2)
+          fimse
+
+fimalgoritmo
+---------------------------------------
+6.
+
+algoritmo "Fahrenheit para Celsius"
+
+var
+qntlinhas: inteiro
+faren,celsius: real
+inicio
+     Leia (qntlinhas)
+     Enquanto (qntlinhas > 0) faca
+         Leia (faren)
+         celsius <- (faren - 32)/1.8
+         Escreval (faren, " fahrenheits são iguais a ",celsius:4:2, " celsius.")
+         qntlinhas <- qntlinhas - 1
+         fimenquanto
+
+
+
+fimalgoritmo
+-----------------------------------------
+7.
+
+algoritmo "Sistema Métrico"
+
+var
+far,cel,pol,mm: real
+
+inicio
+Leia (far)
+   cel <- (far - 32)/1.8
+Leia (pol)
+   mm <- pol*25.4
+Escreval ("Valor em celsius: ",cel:3:2)
+Escreval ("Valor em mm: ",mm:3:2)
+fimalgoritmo
+--------------------------
+8.
+algoritmo "Custo da Lata de Cerveja"
+
+var
+raio,altura,acir,ale,atotal,custo: real
+
+inicio
+Leia (raio)
+Leia (altura)
+acir <- (pi*(raio^2))
+ale <- 2*pi*raio*altura
+atotal <- 2*acir+ale
+custo <- atotal*100
+Escreva (custo:4:2)
+
+fimalgoritmo
+--------------------------
+9.
+algoritmo "discriminante"
+
+var
+delta: real
+a,b,c: inteiro
+
+inicio
+Leia (a,b,c)
+delta <- (b^2-4*a*c)
+Escreva (delta)
+fimalgoritmo
+------------------------
+10.
+algoritmo "divisivel por 3 E 5"
+
+var
+numero: inteiro
+
+inicio
+Leia (numero)
+Se ((numero % 3) = 0) e ((numero % 5) = 0) entao
+   Escreva ("É divisível por 3 e 5")
+senao
+   Escreva ("NÃO é divisível por 3 e 5")
+fimse
+fimalgoritmo
+--------------------------------------------
+11.
+algoritmo "divisivel por 3 E 5"
+
+var
+numero: inteiro
+
+inicio
+Leia (numero)
+Se ((numero % 3) = 0) e ((numero % 5) = 0) entao
+   Escreva ("É divisível por 3 e 5")
+senao
+   Escreva ("NÃO é divisível por 3 e 5")
+fimse
+fimalgoritmo
+
+--------------------------------------------
+12.
+algoritmo "Locadora de charretes"
+var
+horas,valor: real
+inicio
+Leia (horas)
+Se horas >=3 entao
+   valor <- (int(horas/3))*10
+   EscrevaL("Custo: ", valor)
+   Escreval ("Horas: ", horas)
+senao
+   valor <- (horas*5)
+   EscrevaL("Custo: ", valor)
+   Escreval ("Horas: ", horas)
+   fimse
+fimalgoritmo
+---------------------------------
+13.
+
+algoritmo "Conversão de Nota em Conceito"
+
+var
+nota: real
+
+inicio
+Leia (nota)
+Se (nota >= 9) e (nota < 10) entao
+   Escreva ("A")
+   fimse
+Se (nota >= 7.5) e (nota < 9) entao
+   Escreva ("B")
+   fimse
+Se (nota >= 6) e (nota < 7.5) entao
+   Escreva ("C")
+   fimse
+Se (nota >= 0) e (nota < 6) entao
+   Escreva ("D")
+   fimse
+fimalgoritmo
+----------------------------
+14.
+
+algoritmo "Volume da Pirâmide de Base Hexagonal"
+
+var
+V,ab,h,aresta: real
+
+inicio
+Leia (h,aresta)
+ab <- (3*aresta^2*raizq(3))/2
+V <- (1/3)*ab*h
+Escreva ("O volume da pirâmide é: ",V:4:2)
+
+fimalgoritmo
+--------------------------
+15.
+
+algoritmo "Quadrado de pares"
+
+var
+N: inteiro
+par: inteiro
+inicio
+Leia (N)
+par <- 0
+Se (N > 5) e (N < 2000) entao
+   Enquanto (par <> N) faca
+   par <- par + 2
+   Escreval (par)
+   fimenquanto
+fimse
+
+fimalgoritmo
+-----------------------------------
