@@ -10,8 +10,6 @@ body {
   .textos {
     margin-left:2%;
     margin-top:1%;
-    margin-bottom:1%;
-    background-image: url()
   }
   /*imagens*/
   .botao_voltar {
@@ -20,6 +18,12 @@ body {
   }
   .lapizinho {
     margin-right: 3px;
+  }
+  .fotoperfil {
+   
+   margin-left:30%;
+   margin-bottom:0%;
+   margin-top:0%;
   }
   .container {
     display:flex;
@@ -124,10 +128,10 @@ body {
 
 .título {
   margin-top: 5%;
-  margin-left:40%;
+  margin-left:25%;
   color: white;
   font-family: "Source Sans Pro";
-  font-size: 50px;
+  font-size: 100px;
   font-weight: 900;
   line-height: 26px;
   }
