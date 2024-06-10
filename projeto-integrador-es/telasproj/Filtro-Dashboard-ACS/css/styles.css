@@ -1,9 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 .fundo {
   width: 540px;
-  height: 760px;
+  height: 631px;
   border-radius: 40px;
-  background-color: #AED5F2;
+  background-color: #0216C5;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18,9 +18,10 @@
   font-size: 40px;
   font-weight: 900;
   line-height: 26px;
-  padding-left: 19px;
+  padding-left: 31px;
   padding-top: 3px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .subhd {
@@ -30,6 +31,7 @@
   font-weight: 900;
   line-height: 26px;
   text-align: left; 
+  color: white;
 }
 
 .subhd2 {
@@ -40,6 +42,7 @@
   line-height: 26px;
   text-align: left; 
   margin-top:10px;
+  color:white;
 }
 
 .descrição2 {
@@ -53,6 +56,7 @@
   line-height: 18px;
   letter-spacing: 0.25px;
   margin-bottom: 0px;
+  color: #9BCCFA;
 }
 .descrição {
   /* Textos menores que descrevem os textos grandes */
@@ -65,7 +69,9 @@
   line-height: 18px;
   letter-spacing: 0.25px;
   margin-top: 0px;
-  padding-left: 31px;
+  padding-left: 28px;
+  color: #9BCCFA;
+
 }
 
 .seção-maior {
@@ -80,6 +86,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom:25px;
 }
 
 label {
@@ -100,7 +107,7 @@ label span {
   width: 100%;
   height: 100%;
   position: absolute;
-  border: 3px solid #000000;
+  border: 3px solid #ffffff;
   border-radius: 12px;
   cursor: pointer;
 }
@@ -113,7 +120,7 @@ label span::after {
   width: 0px;
   height: 0px;
   height: 0px;
-  border: solid #000000;
+  border: solid #ffffff;
   border-width: 0 6px 6px 0;
   transform: rotate(45deg);
   opacity: 0;
@@ -129,12 +136,12 @@ input:checked ~ span::after {
 .botão {
 width: 261px;
 height: 55px;
-top: 666px;
+top: 530px;
 left: 139px;
 gap: 0px;
 opacity: 0px;
-background-color: #0216c5;
-color:white;
+background-color: white;
+color:#0216C5;
 border:none;
 font-family:Source Sans Pro, sans-serif;
 font-size: 22px;
@@ -145,5 +152,6 @@ cursor:pointer;
 }
 
 .botão:active {
-  background-color:#2636c2;
+  background-color:#ededed;
+  color:#3b47ba
 }
