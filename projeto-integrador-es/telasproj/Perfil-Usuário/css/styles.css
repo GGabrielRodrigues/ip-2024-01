@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
+
 .fundo {
   width: 744px;
   height: 1298px;
@@ -34,6 +35,11 @@
 body {
   background-color: beige;
   font-family:Source Sans Pro, sans-serif;
+  justify-content: center;
+  flex-direction: row;
+  margin:0;
+  display:flex;
+  width: 100%;
 }
 
 /* aqui começa a loucura */
