@@ -1,21 +1,23 @@
-package main 
+package main
 
 import (
 	"fmt"
 )
+
+var (
+	x, y int
+)
+
 func main() {
-
-var pr, p, s, n int
-
-fmt.Print ("Insira dois numeros :")
-fmt.Scan (p, s)
-	if (p % 2== 0) {
-		for n of 1 ate s {
-		pr = (p + (n - 1) * 2)
-		escreva (pr, " ")
+	fmt.Scan(&x, &y)
+	if x%2 == 0 {
+		fmt.Print(x)
+		a := x + 2
+		for cont := 1; cont < y; cont++ {
+			fmt.Print(" ", a)
+			a = a + 2
 		}
-	}else {
-	fmt.Print ("O PRIMEIRO NUMERO NAO E PAR")
+	} else {
+		fmt.Printf("O PRIMEIRO NUMERO NAO E PAR")
 	}
-
 }

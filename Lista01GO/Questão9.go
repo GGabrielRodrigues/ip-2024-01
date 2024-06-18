@@ -4,15 +4,11 @@ import (
 	"fmt"
 )
 
+var (
+	A, B, C float64
+)
+
 func main() {
-
-	var (
-		delta   int
-		a, b, c int
-	)
-
-	fmt.Scan(a, b, c)
-	delta = (b ^ 2 - 4*a*c)
-	fmt.Print(delta)
-
+	fmt.Scan(&A, &B, &C)
+	fmt.Print("O VALOR DE DELTA E = ", (B*B)-(4*A*C))
 }

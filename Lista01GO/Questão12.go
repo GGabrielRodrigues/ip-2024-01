@@ -4,19 +4,16 @@ import (
 	"fmt"
 )
 
+var (
+	stacks, H int
+)
+
 func main() {
-
-	var horas, valor int
-
-	fmt.Scan(horas)
-	if horas >= 3 {
-		valor = (int(horas / 3)) * 10
-		fmt.Println("Custo: ", valor)
-		fmt.Println("Horas: ", horas)
+	fmt.Scan(&H)
+	if H >= 3 {
+		stacks = H / 3
+		fmt.Print("O VALOR A PAGAR E = ", stacks*10+10)
 	} else {
-		valor = (horas * 5)
-		fmt.Println("Custo: ", valor)
-		fmt.Println("Horas: ", horas)
+		fmt.Print("O VALOR A PAGAR E = ", H*5)
 	}
-
 }

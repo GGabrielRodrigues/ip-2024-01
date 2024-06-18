@@ -4,17 +4,13 @@ import (
 	"fmt"
 )
 
+var (
+	F, P, mm, C float64
+)
+
 func main() {
-
-	var (
-		far, cel, pol, mm float64
-	)
-
-	fmt.Scan(far)
-	cel = (far - 32) / 1.8
-	fmt.Scan(pol)
-	mm = pol * 25.4
-	fmt.Println("Valor em celsius: ", cel)
-	fmt.Println("Valor em mm: ", mm)
-
+	fmt.Scan(&F, &P)
+	C = (5 * (F - 32)) / 9
+	mm = P * 25.4
+	fmt.Printf("O VALOR EM CELSIUS = %v\nA QUANTIDADE DE CHUVA E = %v", C, mm)
 }

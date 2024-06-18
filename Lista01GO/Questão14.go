@@ -2,19 +2,16 @@ package main
 
 import (
 	"fmt"
+	"math"
+)
+
+var (
+	alt, ares, Ab, v float64
 )
 
 func main() {
-
-	var N, par int
-
-	fmt.Scan(N)
-	par = 0
-	if (N > 5) && (N < 2000) {
-		for par != N {
-			par = par + 2
-			fmt.Println(par)
-		}
-	}
-
+	fmt.Scan(&alt, &ares)
+	Ab = (3 * ares * ares * math.Sqrt(3)) / 2
+	v = (Ab * alt) / 3
+	fmt.Printf("O VOLUME DA PIRAMIDE E = %v METROS CUBICOS", v)
 }

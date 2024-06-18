@@ -4,23 +4,21 @@ import (
 	"fmt"
 )
 
+var (
+	nota     float64
+	conceito string
+)
+
 func main() {
-
-	var nota float64
-
-	fmt.Scan(nota)
-	if (nota >= 9) && (nota < 10) {
-		fmt.Print("A")
+	fmt.Scan(&nota)
+	if nota >= 9 && nota <= 10 {
+		conceito = "A"
+	} else if nota < 9 && nota >= 7.5 {
+		conceito = "B"
+	} else if nota < 7.5 && nota >= 6 {
+		conceito = "C"
+	} else if nota < 6 {
+		conceito = "D"
 	}
-	if (nota >= 7.5) && (nota < 9) {
-		fmt.Print("B")
-	}
-
-	if (nota >= 6) && (nota < 7.5) {
-		fmt.Print("C")
-	}
-	if (nota >= 0) && (nota < 6) {
-		fmt.Print("D")
-	}
-
+	fmt.Printf("NOTA = %v CONCEITO = %v", nota, conceito)
 }

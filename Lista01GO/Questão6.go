@@ -4,19 +4,22 @@ import (
 	"fmt"
 )
 
+var (
+	F, C  float64
+	tests int
+)
+
 func main() {
-
-	var (
-		qntlinhas      int
-		faren, celsius float64
-	)
-
-	fmt.Scan(qntlinhas)
-	for qntlinhas > 0 {
-		fmt.Scan(faren)
-		celsius = (faren - 32) / 1.8
-		fmt.Println(faren, " fahrenheits são iguais a ", celsius, " celsius.")
-		qntlinhas = qntlinhas - 1
+	sF := []float64{}
+	sC := []float64{}
+	fmt.Scan(&tests)
+	for a := 0; a < tests; a++ {
+		fmt.Scan(&F)
+		sF = append(sF, F)
+		C = (5 * (sF[a] - 32)) / 9
+		sC = append(sC, C)
 	}
-
+	for a := 0; a < tests; a++ {
+		fmt.Printf("%v FAHRENHEIT EQUIVALE(M) A %v CELSIUS\n", sF[a], sC[a])
+	}
 }

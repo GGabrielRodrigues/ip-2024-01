@@ -2,18 +2,19 @@ package main
 
 import (
 	"fmt"
-	"math"
+)
+
+var (
+	pares, cont, N int
 )
 
 func main() {
-
-	var (
-		V, ab, h, aresta float64
-	)
-
-	fmt.Scan(h, aresta)
-	ab = (3 * aresta * aresta * math.Sqrt(3)) / 2
-	V = (1 / 3) * ab * h
-	fmt.Print("O volume da pirâmide é: ", V)
-
+	fmt.Scan(&N)
+	pares = N / 2
+	num := 2
+	for cont < pares {
+		fmt.Println(num, "^2 = ", num*num)
+		cont++
+		num = num + 2
+	}
 }
