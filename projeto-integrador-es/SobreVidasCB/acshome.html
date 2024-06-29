@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="./style/acshome.css">
+    <link rel="icon" href="./img/logo.png">
+    <title>ACS Home</title>
+</head>
+<body>
+    <corpo>
+        <header>
+            <img src="./img/logo.png" id="logo" style="width: 93px;height: 93px;" alt="logo">
+            <div id="altlogo">
+                <p><strong>SobreVidas</strong></p>
+                <p style="margin-top: -5px;color: gray;"><strong>Câncer de boca</strong></p>
+            </div>
+            <div id="altperfil">
+                <p>Nome completo do ACS</p>
+                <p style="color: gray; font-size: 12px;margin-top: -20px;">Agente Comunitário de saúde</p>
+            </div>
+            <div id="btnsair">
+                <a href="index.html">
+                <img src="img/sair.png" alt="botao de sair">
+                </a>
+            </div>
+        </header>
+        <aside>
+            <div id="noticias">
+                <img src="./img/conteudo.png" id="conteudo" style="width: 558px;height: 700px;" alt="imagem de conscientização sobre câncer de boca" usemap="#menuconteudo">
+                <map name="menuconteudo">
+                    <area shape="circle" coords="246,655,15" onclick="trocar(1)" >
+                    <area shape="circle" coords="281,655,15" onclick="trocar(2)" >
+                    <area shape="circle" coords="312,655,15" onclick="trocar(3)" >
+                </map>
+            </div>
+        </aside>
+        <menu>
+            <a href="cadastro.html">
+            <div id="cadastro">
+                <img src="./img/horizontal.png" style="width: 75px;" alt="">
+                <p>Cadastro</p>
+            </div>
+            </a>
+            <a href="dashboard.html">
+            <div id="dashboard">
+                <img src="./img/horizontal.png" alt="">
+                <p>Dashboard</p>
+            </div>
+            </a>
+            <a href="pacientes.html">
+            <div id="pacientes">
+                <img src="./img/more people.png" style="transform: translateY(10px);" alt="">
+                <p style="transform: translateY(10px);">Pacientes</p>
+            </div>
+            </a>
+            <a href="perfil.html">
+            <div id="perfil">
+                <img src="./img/people.png" style="transform: translateY(15px);">
+                <p style="transform: translateY(5px);">Perfil</p>
+            </div>
+            </a>
+            
+            
+        </menu>
+    </corpo>
+    <script src="./main/acshome.js"></script>
+</body>
+</html>
